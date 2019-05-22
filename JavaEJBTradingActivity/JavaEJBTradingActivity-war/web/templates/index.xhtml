@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      >
+    <f:view locale="#{locale_changer.currentLocale}">
+        <h:head>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+            <h:outputStylesheet name="./css/default.css"/>
+            <h:outputStylesheet name="./css/cssLayout.css"/>
+            <h:outputStylesheet name="./css/custom.css"/>
+            <h:outputScript library="js" name="custom.js"/>
+            <title>#{msg.site_title_home}</title>
+        </h:head>
+
+        <h:body>
+            <div id="top" class="top">
+                <ui:insert name="top">
+                    <ui:include src="/chunks/base/header.xhtml" />
+                </ui:insert>
+            </div>
+            <div id="top-search" class="top">
+                <ui:insert name="search">
+                    <ui:include src="/chunks/common/search.xhtml" />
+                </ui:insert>
+            </div>
+            <div id="loading_wrapper">
+                <p>Loading...</p>
+            </div>
+            <div id="left" class="left">
+                <ui:insert name="left">
+                    <ui:include src="/chunks/base/left_menu.xhtml" />
+                </ui:insert>
+            </div>
+            <div id="content" class="right_content">
+                <ui:insert name="content">
+                    <ui:include src="/chunks/index/index_content.xhtml" />
+                </ui:insert>
+            </div>
+        </h:body>
+    </f:view>
+</html>
