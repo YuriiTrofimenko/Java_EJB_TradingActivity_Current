@@ -17,5 +17,7 @@ import org.tyaa.java.ejb.tradingactivity.lib.model.Sale;
 public interface RMIServiceRemote {
 
     List<Sale> getAllSales();
+
+    int addSale(Sale sale);
     
 }

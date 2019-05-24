@@ -20,6 +20,7 @@ public class Main {
         for (Sale sale : RMIConnector.getRemoteService().getAllSales()) {
             System.out.println(sale);
         }
+        RMIConnector.getRemoteService().addSale(new Sale(0, "MSFT", 1000, 12660, 1, 1));
     }
     
 }

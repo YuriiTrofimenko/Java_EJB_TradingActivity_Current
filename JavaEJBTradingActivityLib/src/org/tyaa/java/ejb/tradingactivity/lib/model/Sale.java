@@ -19,8 +19,8 @@ public class Sale implements Serializable {
     private String securityName;
     private int quantity;
     private int price;
-    private Broker brokerId;
-    private Category categoryId;
+    private int brokerId;
+    private int categoryId;
 
     public Sale() {
     }
@@ -35,6 +35,17 @@ public class Sale implements Serializable {
         this.quantity = quantity;
         this.price = price;
     }
+
+    public Sale(Integer id, String securityName, int quantity, int price, int brokerId, int categoryId) {
+        this.id = id;
+        this.securityName = securityName;
+        this.quantity = quantity;
+        this.price = price;
+        this.brokerId = brokerId;
+        this.categoryId = categoryId;
+    }
+    
+    
 
     public Integer getId() {
         return id;
@@ -68,19 +79,19 @@ public class Sale implements Serializable {
         this.price = price;
     }
 
-    public Broker getBrokerId() {
+    public int getBrokerId() {
         return brokerId;
     }
 
-    public void setBrokerId(Broker brokerId) {
+    public void setBrokerId(int brokerId) {
         this.brokerId = brokerId;
     }
 
-    public Category getCategoryId() {
+    public int getCategoryId() {
         return categoryId;
     }
 
-    public void setCategoryId(Category categoryId) {
+    public void setCategoryId(int categoryId) {
         this.categoryId = categoryId;
     }
 
