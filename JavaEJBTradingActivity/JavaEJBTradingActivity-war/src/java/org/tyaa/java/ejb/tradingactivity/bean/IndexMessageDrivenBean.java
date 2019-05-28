@@ -8,10 +8,13 @@ package org.tyaa.java.ejb.tradingactivity.bean;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.ejb.MessageDriven;
+import javax.inject.Inject;
 import javax.jms.JMSException;
 import javax.jms.Message;
 import javax.jms.MessageListener;
 import javax.jms.TextMessage;
+import org.omnifaces.cdi.Push;
+import org.omnifaces.cdi.PushContext;
 
 /**
  *
@@ -22,6 +25,10 @@ import javax.jms.TextMessage;
         name = "IndexMDB")
 public class IndexMessageDrivenBean implements MessageListener{
 
+    @Inject @Push(channel="new_sale_channel")
+    private PushContext newSalesChannel;
+
+    
     @Override
     public void onMessage(Message msg) {
         
@@ -31,6 +38,8 @@ public class IndexMessageDrivenBean implements MessageListener{
             System.out.println("FROM MDB - message type IS " + message.getStringProperty("message_type"));
             //считываем  само сообщение
             System.out.println("FROM MDB - payload  IS " + message.getText());
+            
+            newSalesChannel.send(message.getText());
         } catch (JMSException ex) {
             Logger.getLogger(IndexMessageDrivenBean.class.getName()).log(Level.SEVERE, null, ex);
         }

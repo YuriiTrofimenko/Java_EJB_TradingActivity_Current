@@ -6,3 +6,7 @@ function showProgress(data) {
         document.getElementById('loading_wrapper').style.display = "none";
     }
 }
+/* Функция приема уведомлений с сервера */
+function socketListener(message, channel, event) {
+    console.log(message);
+}
