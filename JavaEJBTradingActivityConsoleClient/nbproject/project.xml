@@ -12,6 +12,7 @@
                 <root id="test.src.dir" name="Тесты"/>
             </test-roots>
             <included-library dirs="200">reference.JavaEJBTradingActivityLib.jar</included-library>
+            <included-library dirs="200">file.reference.controlsfx-8.40.12.jar</included-library>
         </data>
         <libraries xmlns="http://www.netbeans.org/ns/ant-project-libraries/1">
             <definitions>.\lib\nblibraries.properties</definitions>
