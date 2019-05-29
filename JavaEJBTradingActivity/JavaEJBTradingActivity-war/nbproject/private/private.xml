@@ -3,10 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/student/Documents/NetBeansProjects/Java/Enterprise/Java_EJB_TradingActivity_Current/JavaEJBTradingActivity/JavaEJBTradingActivity-war/web/chunks/common/locales.xhtml</file>
-            <file>file:/C:/Users/student/Documents/NetBeansProjects/Java/Enterprise/Java_EJB_TradingActivity_Current/JavaEJBTradingActivity/JavaEJBTradingActivity-war/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/student/Documents/NetBeansProjects/Java/Enterprise/Java_EJB_TradingActivity_Current/JavaEJBTradingActivity/JavaEJBTradingActivity-war/web/chunks/index/index_content.xhtml</file>
+            <file>file:/C:/Users/student/Documents/NetBeansProjects/Java/Enterprise/Java_EJB_TradingActivity_Current/JavaEJBTradingActivity/JavaEJBTradingActivity-war/web/resources/js/custom.js</file>
             <file>file:/C:/Users/student/Documents/NetBeansProjects/Java/Enterprise/Java_EJB_TradingActivity_Current/JavaEJBTradingActivity/JavaEJBTradingActivity-war/web/chunks/index/left_menu.xhtml</file>
-            <file>file:/C:/Users/student/Documents/NetBeansProjects/Java/Enterprise/Java_EJB_TradingActivity_Current/JavaEJBTradingActivity/JavaEJBTradingActivity-war/web/WEB-INF/faces-config.xml</file>
             <file>file:/C:/Users/student/Documents/NetBeansProjects/Java/Enterprise/Java_EJB_TradingActivity_Current/JavaEJBTradingActivity/JavaEJBTradingActivity-war/web/templates/index.xhtml</file>
             <file>file:/C:/Users/student/Documents/NetBeansProjects/Java/Enterprise/Java_EJB_TradingActivity_Current/JavaEJBTradingActivity/JavaEJBTradingActivity-war/src/java/org/tyaa/java/ejb/tradingactivity/bean/IndexMessageDrivenBean.java</file>
         </group>

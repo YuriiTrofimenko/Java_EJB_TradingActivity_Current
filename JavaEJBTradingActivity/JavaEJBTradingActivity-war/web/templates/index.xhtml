@@ -13,9 +13,7 @@
             <h:outputStylesheet name="./css/cssLayout.css"/>
             <h:outputStylesheet name="./css/custom.css"/>
             <h:outputScript library="js" name="custom.js"/>
-            <o:socket channel="new_sale_channel" onmessage="socketListener">
-                <f:ajax event="click" listener="#{index_data.getSales()}" render=":salesList" />
-            </o:socket>
+            <o:socket channel="new_sale_channel" onmessage="socketListener"/>
             <title>#{msg.site_title_home}</title>
         </h:head>
 

@@ -9,4 +9,5 @@ function showProgress(data) {
 /* Функция приема уведомлений с сервера */
 function socketListener(message, channel, event) {
     console.log(message);
+    mojarra.ab(this,event,'click',0,'salesList',{'onevent':showProgress});
 }
