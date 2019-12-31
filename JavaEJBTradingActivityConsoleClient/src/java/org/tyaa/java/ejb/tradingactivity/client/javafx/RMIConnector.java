@@ -28,7 +28,7 @@ public class RMIConnector {
         }
         try {            
             mServiceRemote =
-                    (RMIServiceRemote) mInitialContext.lookup("rmiejbtradingactivityservice");
+                    (RMIServiceRemote) mInitialContext.lookup("rmi/RMIService");
         } catch (NamingException ex) {
             Logger.getLogger(RMIConnector.class.getName()).log(Level.SEVERE, null, ex);
         }

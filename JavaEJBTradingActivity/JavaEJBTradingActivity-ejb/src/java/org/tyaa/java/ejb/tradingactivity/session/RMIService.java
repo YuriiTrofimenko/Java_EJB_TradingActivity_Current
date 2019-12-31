@@ -39,7 +39,7 @@ public class RMIService implements RMIServiceRemote {
     @EJB
     private CategoryFacade mCategoryFacade;
     
-    @Resource(name="jms/TradingActivityPool")
+    @Resource(name="jms/TradingActivityJmsFactory")
     private ConnectionFactory connectionFactory;
     
     @Resource(name="jms/TradingActivityWebTopic")

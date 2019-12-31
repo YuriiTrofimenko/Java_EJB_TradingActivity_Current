@@ -36,7 +36,7 @@ public class Sale implements Serializable {
         this.price = price;
     }
 
-    public Sale(Integer id, String securityName, int quantity, int price, int brokerId, int categoryId) {
+    public Sale(Integer id, String securityName, Integer quantity, Integer price, Integer brokerId, Integer categoryId) {
         this.id = id;
         this.securityName = securityName;
         this.quantity = quantity;

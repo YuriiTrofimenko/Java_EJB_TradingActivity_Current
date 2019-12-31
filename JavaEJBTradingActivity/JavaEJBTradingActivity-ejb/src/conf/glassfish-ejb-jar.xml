@@ -4,7 +4,7 @@
   <enterprise-beans>
     <ejb>
       <ejb-name>RMIService</ejb-name>
-      <jndi-name>rmiejbtradingactivityservice</jndi-name>
+      <jndi-name>rmi/RMIService</jndi-name>
       <pass-by-reference>true</pass-by-reference>
     </ejb>
   </enterprise-beans>
